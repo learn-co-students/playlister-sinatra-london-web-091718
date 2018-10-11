@@ -18,6 +18,7 @@ class LibraryParser
     genre  = genre_match  && genre_match[1]
 
     [artist, song, genre]
+
   end
 
   def call
@@ -34,7 +35,7 @@ class LibraryParser
 
     song.song_genres.build(genre: genre)
     song.artist = artist
-    
+
     song.save
   end
 end
