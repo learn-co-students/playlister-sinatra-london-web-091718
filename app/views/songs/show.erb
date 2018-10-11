@@ -1,0 +1,5 @@
+<h1>Song Info</h1>
+
+<p>Name: <%= @song.name %></p>
+<p>Artist: <a href="/artists/<%= @artist.id %>"><%= @artist.name %></a></p>
+<p>Genre: <a href="/genres/ <%= @genre.id %>"><%= @genre.name.capitalize %></a></p>
